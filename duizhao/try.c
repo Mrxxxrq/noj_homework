@@ -4,6 +4,6 @@
 
 int main()
 {
-    printf("卧槽你那caonima，去尼玛的深度和");
+    printf("卧槽你那caonima");
     return 0;
 }
