@@ -5,5 +5,6 @@
 int main()
 {
     printf("气味让人头疼一样,caonima");
+    printf("气味让人头疼一样");
     return 0;
 }
