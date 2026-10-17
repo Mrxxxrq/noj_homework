@@ -4,6 +4,6 @@
 
 int main()
 {
-    printf("ä½ å¥½ï¼Œä¸–ç•Œ,caonima");
+    printf("ÆøÎ¶ÈÃÈËÍ·ÌÛÒ»Ñù,caonima");
     return 0;
 }
