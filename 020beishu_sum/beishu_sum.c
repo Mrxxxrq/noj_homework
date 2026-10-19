@@ -2,26 +2,34 @@
 int main()
 {
     int t;
-    int n[100];
+    int n[10000];
     scanf("%d",&t);
-    for(int i=t;i > 0;i--)
+    for(int i=0;i < t;i++)
     {   
-        scanf("%d",&n[t-i]);
+        scanf("%d",&n[i]);
     }
-
-
-    for(int i=0;i<t;i++)
+    
+    for(int i = 0; i < t; i++)
     {   
         int sum = 0;
-        for(int s =0; s < n[i];s+=3)
-        {
-            sum =sum +s;
-        }
-        for(int f =0; f < n[i];f+=5)
-        {
-            sum =sum +f;
-        }
+        int last3 = 0;
+        int last5 = 0;
+        int last15 = 0;
+
+        last3 = (n[i]-1-(n[i]-1)%3)/3;
+        sum =3*(1 + last3)*last3/2;
+
+        last5 = (n[i]-1-(n[i]-1)%5)/5;
+        sum = sum + 5*(1 + last5)*last5/2;
+
+        last15 = (n[i]-1-(n[i]-1)%15)/15;
+        sum = sum - 15*(1 + last15)*last15/2;
+
         printf("%d\n",sum);
+
+
     }
+
+    
     return 0;
 }
