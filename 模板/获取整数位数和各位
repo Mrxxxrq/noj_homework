@@ -1,0 +1,18 @@
+int getDigit(int n)//获取整数位数
+{
+    int digit=0;
+    while(n){
+      digit++;
+      n/=10;
+    }
+    return digit;
+}
+
+
+//获取各位,整数除10即去掉末尾，除以任何数都自带取整
+while(n)
+{
+  m = n%10;
+  printf("%d",m);
+  n/=10
+}
