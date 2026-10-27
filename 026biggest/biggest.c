@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>//单调性判定
 long long dandiao(long long n)
 {
    
