@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdbool.h> // 纯C语言使用bool类型必须加这个头文件
 
-const int N = 10; // 假设n最大不超过10
+// const int N = 10; // 假设n最大不超过10
+enum{N=11};//这样不报错
 int ans[N];       // ans数组：用来装我们排好的数字（比如装下1,2,3）
 bool mark[N];     // mark数组：用来标记数字有没有被用过（true表示用过了，false表示还没用）
 int n;            // 我们要排列的数字总数
