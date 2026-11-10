@@ -24,6 +24,7 @@ for(int i=len-1; i>=0; i--)
         sum+=sequence[i];
     }
 ```
+注意此处i = len-1,因为前面最后一轮填入后，len又++，所以此时len比数位多1
 
 
 
